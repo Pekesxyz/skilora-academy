@@ -87,7 +87,7 @@ const NavbarComponent = () => {
 
             <div className="text-center d-flex flex-column flex-lg-row gap-2 justify-content-center align-items-center">
               <button
-                className="btn btn-danger px-4 py-2 rounded-pill fw-semibold shadow-sm btn-cta-nav"
+                className="btn btn-danger px-4 py-2 rounded-3 fw-bold btn-cta-nav"
                 onClick={() => {
                   handleLinkClick();
                   navigate("/kelas");

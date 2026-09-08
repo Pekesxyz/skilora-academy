@@ -51,11 +51,11 @@ const SyaratKetenPage = () => {
         <Container className="pt-5 mt-4">
           <Row className="justify-content-center text-center">
             <Col lg="8">
-              <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
-                Legal & Kebijakan
+              <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-2 fw-semibold mb-2">
+                Legal &amp; Kebijakan
               </span>
               <h1 className="fw-bold text-dark mb-3 animate__animated animate__fadeInUp">
-                Syarat & Ketentuan Layanan
+                Syarat &amp; Ketentuan Layanan
               </h1>
               <p className="text-muted lead fs-6 animate__animated animate__fadeInUp">
                 Harap membaca ketentuan berikut dengan saksama. Dokumen ini mengatur hak, kewajiban, dan lisensi Anda sebagai peserta di platform Skilora Academy.
@@ -73,7 +73,7 @@ const SyaratKetenPage = () => {
         <Container>
           <Row className="justify-content-center">
             <Col lg="9">
-              <div className="alert alert-info border-0 rounded-4 p-4 mb-5 shadow-sm d-flex align-items-center gap-3">
+              <div className="alert alert-info border rounded-3 p-4 mb-4 d-flex align-items-center gap-3">
                 <i className="fa-solid fa-circle-info fs-3 text-info"></i>
                 <div className="small text-dark">
                   Dengan mendaftar akun atau membeli kursus di <strong>Skilora Academy</strong>, Anda menyetujui seluruh ketentuan layanan di bawah ini. Kami berkomitmen menyediakan lingkungan belajar digital yang aman, transparan, dan berdaya guna tinggi.
@@ -84,7 +84,7 @@ const SyaratKetenPage = () => {
                 {sections.map((sec) => (
                   <div
                     key={sec.number}
-                    className="syarat-card p-4 p-md-5 rounded-4 border bg-white shadow-sm"
+                    className="syarat-card p-4 p-md-5 rounded-3 border bg-white"
                   >
                     <div className="d-flex align-items-center gap-3 mb-4">
                       <div

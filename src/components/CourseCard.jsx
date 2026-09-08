@@ -3,7 +3,7 @@ import React from "react";
 const CourseCard = ({ kelas, onSelectCourse }) => {
   return (
     <div
-      className="course-card shadow-sm rounded-4 h-100 d-flex flex-column bg-white overflow-hidden"
+      className="course-card rounded-3 h-100 d-flex flex-column bg-white overflow-hidden"
       data-aos="fade-up"
       data-aos-duration="800"
       data-aos-delay={kelas.delay || "100"}
@@ -17,7 +17,7 @@ const CourseCard = ({ kelas, onSelectCourse }) => {
         <div className="position-absolute top-0 start-0 m-3 d-flex gap-2">
           {kelas.badge && (
             <span
-              className={`badge rounded-pill px-3 py-2 fw-semibold ${
+              className={`badge rounded-2 px-2 py-1 fw-bold ${
                 kelas.badge === "Best Seller"
                   ? "bg-danger text-white"
                   : kelas.badge === "Trending"
@@ -28,7 +28,7 @@ const CourseCard = ({ kelas, onSelectCourse }) => {
               {kelas.badge}
             </span>
           )}
-          <span className="badge rounded-pill bg-dark bg-opacity-75 text-white px-3 py-2 fw-medium">
+          <span className="badge rounded-2 bg-dark bg-opacity-80 text-white px-2 py-1 fw-medium">
             {kelas.category}
           </span>
         </div>

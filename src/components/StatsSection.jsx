@@ -41,18 +41,18 @@ const StatsSection = () => {
   return (
     <section className="stats-section py-5">
       <Container>
-        <div className="stats-card-wrap shadow-sm rounded-4 p-4 p-lg-5 bg-white border">
+        <div className="stats-card-wrap rounded-3 p-4 p-lg-5 bg-white border">
           <Row className="g-4 text-center">
             {stats.map((item, index) => (
               <Col key={index} xs={6} lg={3} className="stat-item">
                 <div
-                  className="stat-icon-box mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center"
+                  className="stat-icon-box mx-auto mb-3 rounded-3 d-flex align-items-center justify-content-center"
                   style={{
-                    backgroundColor: `${item.color}15`,
+                    backgroundColor: `${item.color}12`,
                     color: item.color,
-                    width: "56px",
-                    height: "56px",
-                    fontSize: "1.4rem",
+                    width: "52px",
+                    height: "52px",
+                    fontSize: "1.3rem",
                   }}
                 >
                   <i className={item.icon}></i>
@@ -66,17 +66,17 @@ const StatsSection = () => {
           <hr className="my-4 my-lg-5 opacity-25" />
 
           <div className="text-center">
-            <p className="text-uppercase fw-semibold text-muted small tracking-wider mb-3">
-              Kurikulum Selaras Kebutuhan Industri Terpopuler
+            <p className="text-uppercase fw-bold text-muted small tracking-wider mb-3">
+              Kurikulum Selaras Kebutuhan Industri Teknologi
             </p>
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-3">
               {tools.map((tool, idx) => (
                 <div
                   key={idx}
-                  className="tool-badge d-flex align-items-center gap-2 px-3 py-2 rounded-pill bg-light border"
+                  className="tool-badge d-flex align-items-center gap-2 px-3 py-2 rounded-2 bg-white border"
                 >
                   <i className={tool.icon} style={{ color: tool.color }}></i>
-                  <span className="fw-medium text-secondary small">{tool.name}</span>
+                  <span className="fw-semibold text-secondary small">{tool.name}</span>
                 </div>
               ))}
             </div>

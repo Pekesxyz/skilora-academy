@@ -1,41 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
-  <defs>
-    <!-- Background Brand Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5"/>
-      <stop offset="50%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#E11D48"/>
-    </linearGradient>
-    
-    <!-- Accent Gradient -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#818CF8"/>
-    </linearGradient>
+  <!-- Solid Brand Background (No Gradient) -->
+  <rect x="6" y="6" width="88" height="88" rx="20" fill="#1D4ED8"/>
 
-    <!-- Star Glow -->
-    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
-    </linearGradient>
+  <!-- Clean Tech Code Brackets & S Shape -->
+  <!-- Left Bracket < -->
+  <path d="M 40 32 L 28 44 L 40 56" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25" flood-color="#0F172A"/>
-    </filter>
-  </defs>
+  <!-- Right Bracket > -->
+  <path d="M 60 44 L 72 56 L 60 68" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Rounded Squircle Badge -->
-  <rect x="6" y="6" width="88" height="88" rx="22" fill="url(#bgGrad)" filter="url(#softShadow)"/>
-
-  <!-- Code Bracket Left (Upper S Curve) -->
-  <path d="M 44 28 L 28 40 L 44 52" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Code Bracket Right (Lower S Curve) -->
-  <path d="M 56 48 L 72 60 L 56 72" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Dynamic S Connector Line -->
-  <path d="M 58 32 C 40 32 34 46 50 50 C 66 54 60 68 42 68" fill="none" stroke="url(#accentGrad)" stroke-width="6" stroke-linecap="round"/>
-
-  <!-- Sparkle / Talent Star -->
-  <path d="M 72 20 Q 72 26 78 26 Q 72 26 72 32 Q 72 26 66 26 Q 72 26 72 20 Z" fill="url(#starGrad)"/>
+  <!-- Solid Accent Dot / Terminal Node -->
+  <circle cx="66" cy="34" r="5" fill="#DC2626"/>
+  <circle cx="34" cy="66" r="5" fill="#93C5FD"/>
 </svg>

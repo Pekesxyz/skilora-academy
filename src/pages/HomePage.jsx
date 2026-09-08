@@ -65,38 +65,38 @@ const HomePage = () => {
       {/* ================= HERO SECTION ================= */}
       <header className="w-100 min-vh-100 d-flex align-items-center position-relative overflow-hidden hero-section">
         <Container>
-          <Row className="header-box d-flex align-items-center pt-lg-5 pt-4">
+          <Row className="header-box d-flex align-items-center pt-lg-4 pt-3">
             <Col lg="6" className="pe-lg-4">
-              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-75 border shadow-sm mb-3 animate__animated animate__fadeInDown">
-                <span className="badge bg-danger rounded-pill px-2 py-1">Baru</span>
-                <span className="small fw-semibold text-dark">
-                  Platform Belajar Skill Digital Terdepan
+              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-2 bg-light border mb-3 animate__animated animate__fadeInDown">
+                <span className="badge bg-danger px-2 py-1">Resmi</span>
+                <span className="small fw-semibold text-secondary">
+                  Pelatihan Skill Digital &amp; Portofolio Industri
                 </span>
               </div>
 
               <h1 className="mb-3 animate__animated animate__fadeInUp hero-title">
                 Kuasai Skill Digital, <br />
-                <span className="hero-highlight">Wujudkan Karya &</span> <br />
+                <span className="text-primary">Wujudkan Karya &amp;</span> <br />
                 Karier Impianmu!
               </h1>
 
               <p className="mb-4 animate__animated animate__fadeInUp hero-desc">
-                Akselerasi keahlian coding, UI/UX design, Flutter mobile, dan 3D modelling dari dasar bersama kurikulum standar industri serta pendampingan mentor praktisi.
+                Pelajari coding, UI/UX design, Flutter mobile, dan 3D modelling dari dasar bersama kurikulum standar industri serta pendampingan mentor praktisi berpengalaman.
               </p>
 
               <div className="d-flex flex-wrap gap-3 animate__animated animate__fadeInUp">
                 <button
-                  className="btn btn-danger btn-lg rounded-pill px-4 fw-semibold shadow-sm hero-btn-main"
+                  className="btn btn-danger btn-lg rounded-3 px-4 fw-semibold hero-btn-main"
                   onClick={() => navigate("/kelas")}
                 >
-                  <i className="fa-solid fa-compass me-2"></i>
-                  Jelajahi Kelas
+                  <i className="fa-solid fa-book-open me-2"></i>
+                  Lihat Semua Kelas
                 </button>
                 <a
                   href="https://wa.me/6281234567890?text=Halo%20Skilora%2C%20saya%20ingin%20konsultasi%20jalur%20belajar%20yang%20cocok"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-outline-dark btn-lg rounded-pill px-4 fw-semibold hero-btn-secondary"
+                  className="btn btn-outline-secondary btn-lg rounded-3 px-4 fw-semibold hero-btn-secondary"
                 >
                   <i className="fa-brands fa-whatsapp text-success me-2"></i>
                   Konsultasi Gratis
@@ -134,7 +134,7 @@ const HomePage = () => {
         <Container>
           <Row className="justify-content-center text-center mb-5">
             <Col lg="8">
-              <span className="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+              <span className="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-2 fw-semibold mb-2">
                 Keunggulan Belajar
               </span>
               <h2 className="fw-bold text-dark">
@@ -149,10 +149,10 @@ const HomePage = () => {
           <Row className="g-4">
             {features.map((item, index) => (
               <Col key={index} md="6" lg="3" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="feature-card p-4 rounded-4 border bg-light h-100 d-flex flex-column">
+                <div className="feature-card p-4 rounded-3 border bg-white h-100 d-flex flex-column">
                   <div
-                    className={`feature-icon-box mb-3 rounded-3 d-flex align-items-center justify-content-center bg-${item.color} bg-opacity-10 text-${item.color}`}
-                    style={{ width: "50px", height: "50px", fontSize: "1.3rem" }}
+                    className={`feature-icon-box mb-3 rounded-2 d-flex align-items-center justify-content-center bg-${item.color} bg-opacity-10 text-${item.color}`}
+                    style={{ width: "48px", height: "48px", fontSize: "1.25rem" }}
                   >
                     <i className={item.icon}></i>
                   </div>
@@ -170,7 +170,7 @@ const HomePage = () => {
         <Container>
           <Row className="justify-content-between align-items-end mb-5">
             <Col lg="7">
-              <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-2">
+              <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-2 fw-semibold mb-2">
                 Katalog Pilihan
               </span>
               <h2 className="fw-bold text-dark">Kelas Terpopuler Saat Ini</h2>
@@ -180,7 +180,7 @@ const HomePage = () => {
             </Col>
             <Col lg="4" className="text-lg-end mt-3 mt-lg-0">
               <button
-                className="btn btn-outline-danger rounded-pill px-4 py-2 fw-semibold"
+                className="btn btn-outline-danger rounded-3 px-4 py-2 fw-semibold"
                 onClick={() => navigate("/kelas")}
               >
                 Lihat Semua Kelas ({kelasTerbaru.length}+)
@@ -200,7 +200,7 @@ const HomePage = () => {
           <Row className="mt-5">
             <Col className="text-center">
               <button
-                className="btn btn-danger rounded-pill btn-lg px-5 py-3 fw-semibold shadow"
+                className="btn btn-danger rounded-3 btn-lg px-5 py-3 fw-semibold border-0"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 onClick={() => navigate("/kelas")}
@@ -218,8 +218,8 @@ const HomePage = () => {
         <Container>
           <Row className="justify-content-center text-center mb-5">
             <Col lg="8">
-              <span className="badge bg-warning bg-opacity-15 text-warning px-3 py-2 rounded-pill fw-semibold mb-2">
-                Kisah Sukses
+              <span className="badge bg-warning bg-opacity-25 text-dark px-3 py-2 rounded-2 fw-semibold mb-2">
+                Kisah Sukses Alumni
               </span>
               <h2 className="fw-bold text-dark">Apa Kata Para Alumni?</h2>
               <p className="text-muted">
