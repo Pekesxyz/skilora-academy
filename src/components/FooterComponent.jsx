@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import LogoImg from "../assets/img/logo.svg";
 
 const FooterComponent = () => {
   const [email, setEmail] = useState("");
@@ -25,9 +25,13 @@ const FooterComponent = () => {
         <Row className="gy-4 justify-content-between mb-5">
           <Col lg="4" md="6">
             <div className="brand-footer mb-3 d-flex align-items-center">
-              <span className="brand-icon-wrap me-2 d-flex align-items-center justify-content-center">
-                <i className="fa-solid fa-code text-white"></i>
-              </span>
+              <img
+                src={LogoImg}
+                alt="Skilora Logo"
+                width="38"
+                height="38"
+                className="me-2"
+              />
               <h3 className="fw-bold m-0 text-dark">
                 Skilora<span className="text-danger">.</span>
               </h3>

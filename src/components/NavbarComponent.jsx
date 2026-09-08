@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink, useNavigate } from "react-router-dom";
+import LogoImg from "../assets/img/logo.svg";
 
 const NavbarComponent = () => {
   const [changeColor, setChangeColor] = useState(false);
@@ -43,9 +44,13 @@ const NavbarComponent = () => {
             onClick={handleLinkClick}
             className="fs-3 fw-bold d-flex align-items-center brand-logo"
           >
-            <span className="brand-icon-wrap me-2 d-flex align-items-center justify-content-center">
-              <i className="fa-solid fa-code text-white"></i>
-            </span>
+            <img
+              src={LogoImg}
+              alt="Skilora Logo"
+              width="36"
+              height="36"
+              className="me-2"
+            />
             <span>
               Skilora<span className="text-danger">.</span>
             </span>
