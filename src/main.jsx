@@ -5,7 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./dist/css/main.css";
+import "./css/main.css";
 import "animate.css";
 
 import AOS from "aos";
